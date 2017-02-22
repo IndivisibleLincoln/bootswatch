@@ -6,7 +6,7 @@
 //
 //## Colors based on Material Design for Indivisible Lincoln
 
-@darkprimary: #512da8;
+@darkprimary: #000000;
 @primary: #673ab7;
 @lightprimary: #c7bfe6;
 @icontext: #ffffff;
@@ -200,7 +200,7 @@
 //** Text color for `<input>`s
 @input-color:                    @text-color;
 //** `<input>` border color
-@input-border:                   darken(@lightprimary, 10%);
+@input-border:                   @gray-lighter; //darken(@lightprimary, 10%);
 
 // TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
 //** Default `.form-control` border radius
@@ -377,13 +377,13 @@
 @navbar-collapse-max-height:       340px;
 
 @navbar-default-color:             #fff;
-@navbar-default-bg:                @primary;
+@navbar-default-bg:                @darkprimary;
 @navbar-default-border:            transparent;
 
 // Navbar links
 @navbar-default-link-color:                #fff;
 @navbar-default-link-hover-color:          #fff;
-@navbar-default-link-hover-bg:             @darkprimary;
+@navbar-default-link-hover-bg:             @primary;
 @navbar-default-link-active-color:         #fff;
 @navbar-default-link-active-bg:            darken(@navbar-default-bg, 10%);
 @navbar-default-link-disabled-color:       #ccc;
@@ -690,13 +690,13 @@
 //** Background color of single list items on hover
 @list-group-hover-bg:           @darkprimary;
 //** Text color of active list items
-@list-group-active-color:       @component-active-color;
+@list-group-active-color:       #ffffff;
 //** Background color of active list items
-@list-group-active-bg:          @component-active-bg;
+@list-group-active-bg:          @darkprimary;
 //** Border color of active list elements
-@list-group-active-border:      @list-group-active-bg;
+@list-group-active-border:      @darkprimary;
 //** Text color for content within active list items
-@list-group-active-text-color:  lighten(@list-group-active-bg, 40%);
+@list-group-active-text-color:  #ffffff;
 
 //** Text color of disabled list items
 @list-group-disabled-color:      @gray-light;
